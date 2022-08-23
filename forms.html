@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!-- <button type="button">OUTSIDE FORM</button> -->
+    <form action="/tacos">
+        <!-- <button type="button">PLEASE DO NOT SUBMIT FORM</button>
+        <button type="submit">PLEASE DO NOT SUBMIT FORM</button> -->
+        <p>
+            <label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <!-- <button>IN THE MIDDLE!</button> -->
+        <p>
+            <label for="color">Enter a color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a Number:</label>
+            <input id="number" type="number" placeholder="enter a number" name="num">
+        </p>
+        <!-- <p>
+            <label>
+                Enter a Number:
+                <input type="number" placeholder="enter a number">
+            </label>
+        </p> -->
+        <!-- this button doesn't submit the form b/c of the "type" attribute -->
+        <button type="button">Regular button (won't submit)</button>
+
+        <button>Submit!!</button>
+        <!-- <button type="button">PLEASE DO NOT SUBMIT FORM</button> -->
+        <!-- Type of button below -->
+        <input type="submit" value="Click me">
+    </form>
+    <button>Not Inside Form</button>
+
+    <form action="https://www.reddit.com/search">
+        <!-- reddit for it's name expects "q" for the name -->
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+</body>
+
+</html>
